@@ -1,0 +1,92 @@
+
+
+边框属性broder
+============================
+
+
+一、概述：
+	元素的边框 (border) 是围绕元素内容和内边距的一条或多条线。
+	CSS border 属性允许你规定元素边框的样式、宽度和颜色。
+
+
+
+二、属性和值：
+
+	属性：
+		1.边框的样式：border-style：
+			单边框样式：	
+				border-top-style
+				border-right-style
+				border-bottom-style
+				border-left-style
+
+			值：
+				none 	定义无边框。
+				hidden 	与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。
+				dotted 	定义点状边框。在大多数浏览器中呈现为实线。
+				dashed 	定义虚线。在大多数浏览器中呈现为实线。
+				solid 	定义实线。
+				double 	定义双线。双线的宽度等于 border-width 的值。
+				groove 	定义 3D 凹槽边框。其效果取决于 border-color 的值。
+				ridge 	定义 3D 垄状边框。其效果取决于 border-color 的值。
+				inset 	定义 3D inset 边框。其效果取决于 border-color 的值。
+				outset 	定义 3D outset 边框。其效果取决于 border-color 的值。
+				inherit 规定应该从父元素继承边框样式。
+
+		2.边框的宽度：border-width:
+			单边框宽度：	
+				border-top-width
+				border-right-width
+				border-bottom-width
+				border-left-width
+
+			值：
+				数字值：数字px;
+				thin 	定义细的边框。
+				medium 	默认。定义中等的边框。
+				thick 	定义粗的边框。
+				length 	允许您自定义边框的宽度。
+				inherit 规定应该从父元素继承边框宽度。
+
+		3.边框的颜色：border-color:
+			单边框颜色：
+				border-top-color
+				border-right-color
+				border-bottom-color
+				border-left-color
+
+			值：
+				16进制颜色
+				英文字母颜色
+				rgb颜色
+
+
+
+
+	 
+<!--CSS3边框圆角-->
+border-radius
+border-top-left-radius
+border-top-right-radius
+border-bottom-left-radius
+border-bottom-right-radius
+
+box-shadow						设置或检索对象阴影		6个值，第四个值是颜色重叠
+值1：右侧阴影	
+值2：底部阴影
+值3：模糊度
+值4：包裹颜色值（效果和边框差不多）
+值5：颜色值
+值6：inset内阴影
+
+
+box-reflect						设置或检索对象的倒影
+
+border-unage-source
+border-image-slice		
+
+stretch [stretʃ]				拉伸
+slice[slaɪs]					切片
+percentage[pə'sentɪdʒ]			百分比
+shadow ['ʃædəʊ]					阴影
+reflect [rɪ'flekt]				反射

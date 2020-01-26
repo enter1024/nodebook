@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>坐标值</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                console.log("top:"+$("div").offset().top);
+                console.log("left:"+$("div").offset().left);
+                console.log("position的top:"+$("div").position().top);
+                console.log("position的left:"+$("div").position().left);
+            });
+
+            $("#btn2").click(function () {
+                var left = $("#left").val();
+                var top = $("#top").val();
+                $("div").offset({
+                    top:top,
+                    left:left
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">获取div的坐标值</button>
+    <button id="btn2">设置div的坐标值</button>
+    <label for="left">left:</label><input type="text" id="left">
+    <label for="top">top:</label><input type="text" id="top">
+    <div></div>
+</body>
+</html>

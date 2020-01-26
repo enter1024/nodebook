@@ -1,0 +1,38 @@
+background背景
+=================
+// 背景全部属性的缩写
+background: color image repet position size;
+
+// 常用的缩写方式
+background: image repeat position;
+
+//CSS1
+1.background-color:
+2.background-image:
+3.background-repeat:
+4.background-position:
+
+//CSS3
+5.background-size : auto|length|percentage|cover|contain;
+6.background-attachment:
+7.background-clip:
+
+
+
+
+background-size有5种取值。
+background-size: auto|length|percentage|cover|contain;
+----------------------------------------------------------
+background-size: width height;
+
+1.	background-size:auto;			//默认，如果使用图片作为背景，将以图片的尺寸为准
+
+2.	background-size:100px 150px;	//length自定义尺寸
+
+3.	background-size:50% 50%;	//percentage，以百分比的方式缩放图片
+	
+4.	background-size:cover;		//cover,覆盖满容器,有可能会溢出部分内容,不能完全显示图片
+
+5.	background-size:contain;	//contain 拉伸到容器的某一边，另一边有空白
+	
+	

@@ -1,0 +1,2 @@
+﻿正常浏览器  :  oninput  
+Ie678支持的 ： onpropertychange 

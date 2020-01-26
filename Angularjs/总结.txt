@@ -1,0 +1,36 @@
+
+angularjs
+===================================
+什么是AngularJS： 
+		angularjs是一个 JavaScript 框架。它是一个以 JavaScript 编写的库
+		使开发单一页面的应用程序变得更加容易和简便
+
+AngularJS可以做什么？
+    AngularJS 把应用程序数据绑定到 HTML 元素。
+    AngularJS 可以克隆和重复 HTML 元素。
+    AngularJS 可以隐藏和显示 HTML 元素。
+    AngularJS 可以在 HTML 元素"背后"添加代码。
+    AngularJS 支持输入验证。
+
+模块化module
+var app = angular.module('myModel', []);
+
+控制器controller	
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+//为了防止代码被压缩后$scope注入发生改变，使用[]包裹函数function,数组的最后一个参数就是函数
+改：
+app.controller('myCtrl', ['$scope', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+}]);
+
+		
+1.表达式：使用双{{}}包裹的内容被称作表达式
+		表达式支持：	数字、字符串、变量、操作符
+		表达式支持：	过滤器
+		表达式不支持：	条件判断，循环及异常
+		
+2.

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块级元素、行内块元素、行内元素的区别</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            font-family: "微软雅黑";
+            color: #333;
+        }
+        div,p,ol,ul,dl,dd,dt{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+        	height: 30px;
+        	line-height: 30px;
+			padding-left: 20px;
+			
+        }
+        .wrapper{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .wrapper > header{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            margin: 30px auto;
+        }
+        section{
+            min-height: 300px;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 5px #585858;
+            margin-bottom: 50px;
+        }
+        section > h4{
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            background-color: #d8d8d8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>块级元素、行内块元素、行内元素的区别</header>
+        <section>
+            <h4>块级元素block</h4>
+            <div class="wrap_box">
+            	<ul>
+            		<li>1.display:block</li>
+            		<li>2.可控的：width、height、padding、margin</li>
+            		<li>3.不可控：</li>
+            		<li>4.常见的代表元素有：div、h1~h6、ul、ol、li、p等</li>
+            	</ul>
+            </div>
+        </section>
+        <section>
+            <h4>行内块元素inline-block</h4>
+            <div class="wrap_box">
+            	<ul>
+            		<li>1.display:inline-block</li>
+            		<li>2.可控的：width、height、padding、margin</li>
+            		<li>3.不可控：</li>
+            		<li>4.常见的代表元素有：inupt、img、textarea、button、label等</li>
+            	</ul>
+            </div>
+        </section>
+        <section>
+            <h4>行内元素inline</h4>
+            <div class="wrap_box">
+            	<ul>
+            		<li>1.display:inline</li>
+            		<li>2.可控的：padding-left/padding-right、margin-left/margin-right</li>
+            		<li>3.不可控：宽高width、height,
+            		上下边距padding-top/padding-bottom、margin-top/margin-right
+            		</li>
+            		<li>4.常见的代表元素有：i、b、s、u、sub、span等</li>
+            	</ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

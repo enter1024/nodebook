@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoit">
+    <title>meta</title>
+    <style>
+        div{
+            width: 200px;
+            background-color: pink;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">我是div1</div>
+
+    <div id="div2">
+        我是div2
+        <p>我是p标签</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+    <input id="input" type="text" value="我是单标签">
+    <button id="btn1">div1</button>
+    <button id="btn2">div2</button>
+    <button id="btn3">div3</button>
+</body>
+</html>
+<script>
+    window.onload = function () {
+
+
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+        var input = document.getElementById("input");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+
+        //  1.将div里面的内容替换
+        btn1.onclick = function () {
+            //div1.innerHTML = "内容已被替换innerHTML";   //  可以替换
+            div1.innerText = "内容已被替换innerText";   //  可以替换
+        }
+
+
+        //  2.将div里面的内容替换，包括里面的标签
+        btn2.onclick = function () {
+            //div2.innerHTML = "内容已被替换innerHTML";       //连标签都被替换掉
+            //div2.innerText = "内容已被替换innerText";       //连标签都被替换掉
+
+            var p = document.getElementsByTagName("p")[0];
+            p.innerText = "p123";
+        }
+
+        //  3.将input里面的内容替换
+        btn3.onclick = function () {
+            input.value = "内容已被替换value";       //被替换
+
+        }
+    }
+</script>
+
+
+
+/*
+    总结：
+    innerHTML           //用于替换双标签里面的内容，包括标签（如果要替换div里面的内容，会连标签都被替换掉）
+    innerText           //用于替换双标签里面的内容，包括标签（如果要替换div里面的内容，会连标签都被替换掉）
+    value               //替换表单元素里面的内容
+
+    问：innerHTML和innerText有什么区别？
+    答: innerHTML指的是从对象的起始位置到终止位置的全部内容,包括Html标签。
+        innerText指的是从起始位置到终止位置的内容,但它去除Html标签。(ie浏览器的属性)
+        outerHTML指的是除了包含innerHTML的全部内容外, 还包含对象标签本身。
+
+*/

@@ -1,0 +1,19 @@
+﻿
+		div{
+			opacity: 0.3;
+			filter:alpha(opacity=30);		/*ie兼容模式*/
+		}
+      
+
+
+
+<!-- 
+
+	opacity 和	rgba的区别
+
+	1.使用opacity为元素设置透明度时，如果该元素有子元素，子元素也会继承透明度的属性，既子元素也跟着透明；
+	2.使用rgba(255,0,0,.5) 为元素设置透明度时，子元素不会透明；
+
+	js方式为盒子设置透明度 div.style.backgroundColor = "reba(201,21,35,0)";
+	拼接透明度	div.style.backgroundColor = "reba(201,21,35,"+ value +")";
+-->

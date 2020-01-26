@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js中的一些注意问题</title>
+</head>
+<body>
+    <button id="btn1">js中直接使用不存在的变量，会报错</button>
+    <button id="btn2">js中通过window对象使用不存在的变量，提示undefined</button>
+</body>
+</html>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+
+
+    //在js中直接使用不存在的变量会报错
+    btn1.onclick = function () {
+        alert(a);
+    }
+
+
+    //在js中通过window使用不存在的变量不会报错，只会提示这个变量未定义undefined
+    btn2.onclick = function () {
+        alert(window.a);
+    }
+
+</script>

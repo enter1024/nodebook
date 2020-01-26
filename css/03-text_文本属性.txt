@@ -1,0 +1,75 @@
+
+文本属性
+========================
+1.color: red;  /*字体颜色*/
+2.line-height: 行高;
+3.text-shadow: 文字阴影;
+4.text-decoration: underline; /*文本装饰属性: underline,line-through,overline,none*/
+5.text-align: right;	/*文本对齐属性	*/
+6.text-indent: 2em    /*文本缩进属性	*/
+
+
+1.文本装饰的属性
+	格式：text-decoration: underline;
+	
+	取值：	underline			下划线
+					line-through	删除线
+					overline			上划线
+					
+	快捷键:
+			td  text-decoration: none;
+			tdu text-decoration: underline;
+			tdl text-decoration: line-through;
+			tdo text-decoration: overline;
+
+	
+2.文本水平对齐的属性
+	格式：text-align: right;
+	
+	取值：
+			left		左
+			right		右
+			center		中间
+			
+	快捷键：
+			ta text-align: left;
+			tar text-align: right;
+			tac text-align: center;
+
+
+3.文本缩进的属性
+
+	格式：text-indent: 2em
+	
+	取值：	em
+			1em代表缩进一个 中文字宽度
+			
+	快捷键：
+			ti text-indent:;
+			ti2e text-indent: 2em;
+
+			
+4.	color： rgb(255,0,0);   三原色
+	color：rgba(255,0,0,.05);  三原色带透明,越小越透明
+	color: #ff0000;  16进制
+	屏幕中的像素是由很多很多个小方块的像素构成的，每一个小方块都是一个像素，每一个像素都是由三原色组成。
+
+			
+/*
+字体属性font		
+==================================
+*/
+1.font-style: italic ;   /*(斜体italic，正常normal)*/
+2.font-weight: bold;  /*(单词或数字取值，bold==700)*/
+3.font-size: 30px;
+4.font-family: '宋体';
+
+
+/*字体简写必须要有size和family，style,weight可以调换位置，size,family不能调换位置*/
+font: style weight size family;
+font: weight size family; /*font: 400 15px/15px '宋体'*/     15px/15px (字号/行高)
+font: size family;
+
+
+/*中文字体可处理英文字体，英文字体不能处理中文字体，如果有中文和英文，想给英文设置不同的字体，
+英文必须要放在中文的前面*/

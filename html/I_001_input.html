@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  input是行内块元素，可以直接修改width/height   */
+        input{
+            width: 200px;
+            height: 40px;
+            background-color: #ddd;
+            outline-style: none;        /*  去除轮廓样式  */
+            border: none;               /*  去除边框    */
+            vertical-align: top;        /*  顶部对齐（一定要设置对齐方式，避免不可预知的问题）     */
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            margin-left: -100px;
+            padding-left: 10px;
+            font-size: 18px;
+			
+			-webkit-appearance: none;		/*在移动端清除浏览器默认样式*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="请输入内容" id="name">
+    </div>
+</body>
+</html>
+
+<!--  <label for="name">搜索：</label>   -->
